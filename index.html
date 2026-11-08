@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Karoo Spit Braai catering in Cape Town and the Western Cape. Explore spit braai, wedding and function menus and request a quote.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Karoo Spit Braai | From our Plaas to your Table</title>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Karoo Spit Braai home">
+    <span class="brand-mark">K</span><span><b>KAROO</b><small>SPIT BRAAI</small></span>
+  </a>
+  <a class="header-cta" href="#contact">GET A QUOTE</a>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="eyebrow">CAPE TOWN & WESTERN CAPE</div>
+    <h1>From our Plaas<br><em>to your Table.</em></h1>
+    <p class="lead">Real Karoo flavour. Slow-roasted favourites. Memorable gatherings.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#contact">Request a quote <span>↗</span></a>
+      <a class="btn ghost" href="#menus">Explore menus</a>
+    </div>
+    <div class="hero-photo" role="img" aria-label="Karoo-style spit braai feast">
+      <div class="photo-caption"><span>AUTHENTIC FLAVOURS</span><b>Made for sharing.</b></div>
+    </div>
+    <div class="quickfacts">
+      <div><b>Spit braai</b><small>Slow-roasted favourites</small></div>
+      <div><b>Weddings</b><small>Celebrate around the table</small></div>
+      <div><b>Functions</b><small>Good food, great company</small></div>
+    </div>
+  </section>
+
+  <section id="menus" class="section">
+    <div class="section-head"><div class="eyebrow">GOOD FOOD, GOOD COMPANY</div><h2>Find your <em>feast.</em></h2><p>Explore a selection of Karoo Spit Braai menus. Confirm current prices and availability when requesting your quote.</p></div>
+    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+      <button class="tab active" data-menu="spit" role="tab" aria-selected="true">Spit braai</button>
+      <button class="tab" data-menu="wedding" role="tab" aria-selected="false">Weddings</button>
+      <button class="tab" data-menu="summer" role="tab" aria-selected="false">Specials</button>
+    </div>
+    <div id="menu-content" class="menu-grid" aria-live="polite"></div>
+    <p class="fineprint">Menu details and prices are indicative and may change. Minimum guest numbers and terms may apply. Please request a current written quote.</p>
+  </section>
+
+  <section id="about" class="about section">
+    <div class="eyebrow">THE KAROO WAY</div><h2>Bring everyone<br><em>to the table.</em></h2>
+    <p>From relaxed family celebrations to weddings and corporate functions, Karoo Spit Braai brings generous food and authentic Karoo-inspired flavour to your occasion.</p>
+    <a class="text-link" href="#contact">Let's plan your event <span>→</span></a>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-head"><div class="eyebrow">LET'S MAKE IT DELICIOUS</div><h2>Tell us about<br><em>your event.</em></h2><p>Share a few details and we'll help you plan the catering.</p></div>
+    <form id="quote-form">
+      <div class="form-row"><label>Your name<input name="name" autocomplete="name" required placeholder="Full name"></label><label>Phone / WhatsApp<input name="phone" type="tel" autocomplete="tel" required placeholder="Your number"></label></div>
+      <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+      <div class="form-row"><label>Event date<input name="date" type="date"></label><label>Number of guests<input name="guests" type="number" min="1" placeholder="e.g. 80"></label></div>
+      <label>Event location<input name="location" placeholder="Suburb / venue"></label>
+      <label>Type of event<select name="event"><option value="">Choose event type</option><option>Wedding</option><option>Birthday / family function</option><option>Corporate function</option><option>Other celebration</option></select></label>
+      <label>Menu you're interested in<select name="menu"><option value="">Not sure yet</option><option>Spit Braai Menu</option><option>Wedding Menu</option><option>Seasonal Special</option></select></label>
+      <label>Additional details<textarea name="message" rows="4" placeholder="Tell us what you have in mind…"></textarea></label>
+      <button class="btn primary submit" type="submit">Send enquiry via WhatsApp <span>↗</span></button>
+      <p class="form-note">Your message opens in WhatsApp for you to review and send. You can also email <a href="mailto:karoospitbraai@outlook.com">karoospitbraai@outlook.com</a>.</p>
+      <div id="form-status" class="status" role="status"></div>
+    </form>
+    <div class="contact-strip"><a href="tel:+27746411518">074 641 1518</a><a href="mailto:karoospitbraai@outlook.com">Email Karoo Spit Braai</a><a href="https://spitbraaifood.co.za" target="_blank" rel="noopener">Visit website ↗</a></div>
+  </section>
+</main>
+
+<nav class="bottom-nav" aria-label="Main navigation">
+  <a href="#home"><span>⌂</span>Home</a><a href="#menus"><span>▤</span>Menus</a><a href="#about"><span>✦</span>About</a><a href="#contact"><span>✉</span>Contact</a>
+</nav>
+<footer><span class="brand-mark small">K</span><b>KAROO SPIT BRAAI</b><p>From our Plaas to your Table – Real Karoo Flavour, Every Time!</p><small>© <span id="year"></span> Karoo Spit Braai</small></footer>
+<script src="app.js"></script>
+</body>
+</html>

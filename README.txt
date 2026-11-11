@@ -1,28 +1,25 @@
-KAROO SPIT BRAAI – ANDROID PWA STARTER
+KAROO SPIT BRAAI PWA — V2
 
-CONTENTS
-- index.html: app homepage, menus, about and enquiry form
-- styles.css: responsive dark/red/white brand styling
-- app.js: menu tabs and WhatsApp enquiry form
-- manifest.json: Android install metadata
-- service-worker.js: basic offline app shell
-- icons/: install icons
+This folder contains the root-level files for a GitHub Pages Progressive Web App. The manifest has a distinct v2 app ID and the service worker uses a new cache name to avoid reusing the earlier installation record.
 
-IMPORTANT CONTENT CHECKS BEFORE PUBLISHING
-1. The live website returned HTTP 403 when checked, so this first build uses menu/contact information available from previous Karoo Spit Braai menu files and conversations.
-2. Confirm current prices and menu details before publishing. Older menu files contain prices that may have changed.
-3. The known contact details used here are 074 641 1518 and karoospitbraai@outlook.com. Confirm they are still correct.
-4. The enquiry form opens WhatsApp to 074 641 1518 with the customer's message pre-filled. It does not silently submit or store personal data.
-5. The hero image is a temporary remotely hosted food photo. Replace it with an approved Karoo Spit Braai photograph for the final brand version.
-6. The app links back to https://spitbraaifood.co.za.
+FILES
+- index.html — app home, menu browser and event enquiry form
+- styles.css — responsive mobile layout
+- app.js — menu navigation, install button and WhatsApp enquiry
+- manifest.json — Android install identity and icons
+- service-worker.js — offline app shell
+- icons/ — 192px and 512px app icons
+- images/ — the official website logo and food photos used in the home screen and gallery
 
-PUBLISH WITH GITHUB PAGES
-1. Extract this ZIP.
-2. Upload the CONTENTS of this folder (not the enclosing folder) to the root of your GitHub repository.
-3. Keep index.html, styles.css, app.js, manifest.json and service-worker.js at the repository root.
-4. Keep the icons folder and both PNG files.
-5. In GitHub: Settings > Pages > Deploy from a branch > main > /(root) > Save.
-6. Open the published HTTPS URL in Chrome on Android.
-7. Chrome menu > Install app (or Add to Home screen).
+PUBLISHING
+1. In the GitHub repository, replace the old files with the contents of this folder. Keep index.html, manifest.json, service-worker.js, app.js and styles.css at the repository root; keep the icons and images folders.
+2. In GitHub, open Settings > Pages and ensure the main branch and /(root) are published.
+3. Wait for the Pages deployment to finish. Open the published HTTPS address ending in /Karoo-Spit-Braai-/ on the phone, not the github.com repository page.
+4. In Chrome, refresh the site. If the install button appears, tap it. Otherwise use Chrome menu > Install app or Add to Home screen.
+5. The v2 manifest ID is intentionally different from the earlier generic ID. If the old ghost entry appears in your app drawer after v2 installs, remove that old entry.
 
-This is a first working app shell. Verify menu data, replace the temporary photo, and test the WhatsApp flow before promoting it to customers.
+ENQUIRIES
+The app form prepares an enquiry in WhatsApp addressed to +27 74 641 1518. It does not store or send the details by itself; the customer reviews and sends the WhatsApp message. The contact section also links to the website's contact form and email.
+
+MENU
+Menu details and the supplied 2026 artwork are included. Prices and seasonal offers should be confirmed with the business when quoting.
